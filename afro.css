@@ -1,0 +1,56 @@
+body{
+    font-family:monospace ;
+    background : #f4f4f9 ;
+}
+
+header{
+background-color: chartreuse;
+}
+
+header.menu ul {
+
+     color :red ;
+     height: 100%;
+     float:left ;
+}
+footer {
+text-align: center;
+}
+
+section.partie1 {
+    text-align: center ;
+    font-size: 100%;
+}
+p.intro {
+    color: crimson;
+    text-align: center;
+}
+<style>
+.slider{
+    width:500% ;
+    overflow:hidden;
+    margin:150px auto;
+}
+.slides{
+    width: calc(500px * 3);
+    animation: glisse 10s infinite;
+} 
+.slide{
+    float:left;
+}
+@keyframes glisse {
+    0%{
+        transform :translateX(0)
+    }
+    10%{
+        transform :translateX(-200px)
+    }
+    
+    43%{
+        transform :translateX(-500px)
+    }
+    60%{
+        transform :translateX(-1000px)
+    }
+}
+</style>
