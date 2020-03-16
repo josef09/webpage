@@ -1,0 +1,73 @@
+.partie1{
+    width: 255px ;
+    float: left ;
+}
+.contentbox{
+    box-sizing :border-box ;
+    background :#fff ;
+    padding :12px ;
+    box-shadow :rgba(0,0,0, 0.25);
+    border-radius:2px;
+}
+.l-container-row {
+    margin-bottom :12px ;
+}
+.contentbox::before
+{
+    content: "" ;
+    display :table ;
+}
+.no.padding {
+    padding :0 !important
+}
+.position-relative{
+    position:relative ;
+}
+.itemlist
+{
+  list-style-type :none ;
+  margin :0;
+  padding :0 ;  
+}
+.treelist
+{
+    box-sizing: border-box ;
+}
+.tree {
+margin :0 0 0.1667em ;
+font-weight :bold ;
+font-size :12px ;
+
+}
+.a
+{
+    color: #0064D2 ;
+    text-decoration :none ;
+    outline :none ;
+    cursor :pointer ;
+}
+.splitheader--title{
+    width :60 ;
+    margin:0 ;
+    white-space :nowrap ;
+    overflow :hidden ;
+    text-overflow :ellipsis ;
+
+}
+.splitheader--addon
+{
+    width :40% ;
+    text-align :right ;
+    white-space: nowrap ;
+    margin :0;
+}
+.splitheader
+{
+    display :flex ;
+    -webkit-box-sizing: border-box ;
+    white-space :nowrap ;
+    align-items: flex-end ;
+}
+.boxheader-normarginbottom{
+    margin-bottom: 0 ;
+}
