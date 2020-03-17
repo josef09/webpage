@@ -1,0 +1,42 @@
+
+.sign-mode{
+    vertical-align: bottom;
+    text-align: right;
+    list-style-type: none;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: rgb(127, 187, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li a:hover{
+    background-color: #111111;
+}
+
+.Rubriken{
+    align-content: space-between;
+    vertical-align: bottom;
+    text-align: right;
+    list-style-type: none;
+    padding-right: 20px;
+}
+.afro-class #afro{
+    text-align: center;  
+}
+
+.patisserie-class #patisserie{
+    text-align: center;  
+}
+
+.evenementiel-class #evenementiel{
+    text-align: center;  
+}
