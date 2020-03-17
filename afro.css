@@ -1,15 +1,15 @@
 body{
-    font-family:monospace ;
-    background : #f4f4f9 ;
+    font-family:serif ;
+    background: #f4f4f9 ;
 }
 
 header{
-background-color: chartreuse;
+background-color: rgb(59, 40, 24);
 }
 
-header.menu ul {
+menu {
 
-     color :red ;
+     color: #f4f4f9;
      height: 100%;
      float:left ;
 }
@@ -25,32 +25,44 @@ p.intro {
     color: crimson;
     text-align: center;
 }
-<style>
+
 .slider{
-    width:500% ;
+    width:600px ;    /*aggrandir le cadre */
     overflow:hidden;
-    margin:150px auto;
+    height: 400px;
+
+    margin:100px auto;
+    background-color: deepskyblue ;
 }
 .slides{
-    width: calc(500px * 3);
-    animation: glisse 10s infinite;
+    width: calc(200px * 3);
+    animation: glisse 5s infinite;
 } 
 .slide{
     float:left;
+    width: 200px ; /*grandeur foto*/
+    height:200px ;
 }
-@keyframes glisse {
+@keyframes glisse{
     0%{
         transform :translateX(0)
     }
     10%{
-        transform :translateX(-200px)
+        transform :translateX(50px)
     }
     
     43%{
-        transform :translateX(-500px)
+        transform :translateX(-5px)
     }
     60%{
-        transform :translateX(-1000px)
+        transform :translateX(-50px)
     }
 }
-</style>
+.pagecomplete{
+    background-color: black;
+}
+.menuStandard{
+    color: beige;
+    background-color:white ;
+    
+}

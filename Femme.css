@@ -27,3 +27,37 @@
     
 
 }
+.fot{
+   
+    height: 150px;
+    width: 150px;
+    position: relative;
+    
+}
+.list {
+    margin-bottom: 12px;
+    position:relative;
+    width: 500px;
+    height :400px;
+    display :-webkit-flex ;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -12px;
+    
+}
+.entete{
+    height: 200px;
+    
+}
+.milieu{
+    background: sienna;
+    background-color: goldenrod;
+}
+
+.menu{
+
+    color:yellow ;
+    height: 100%;
+    float: right ;
+}
