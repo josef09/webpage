@@ -1,0 +1,123 @@
+
+.sous-titre1
+{
+    background: red;
+}
+
+.ensemble
+{
+    box-sizing : border-box ;
+    position: relative;
+    width :255px ;
+    float : left;
+}
+
+.fot{
+   
+    height: 100px;
+    width: 100px;
+    position: relative;
+    
+}
+/* il y a une parenthese a list ist ,a remettre*/
+.entete h3{
+    text-align: center;
+    float: center;
+    
+}
+.milieu{
+    background: sienna;
+    background-color: white;
+  width :100%;
+  float :left ;
+  padding :30px  15px;
+    
+}
+
+.menu {
+
+    color:yellow ;
+    height: 100%;
+    float: right ;
+}
+
+.containerGeneral{
+    max-width :1000px;
+    margin:auto ;
+    
+}
+.container{
+    
+    background-color: tomato;
+}
+.element11{
+    width: 25%;
+    float: left;
+    position:relative ;
+
+    
+}
+.element11 img{
+    width :90% ;
+    display :-webkit-flex ;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nomelem{
+  position: absolute ;
+  left :0px;
+  bottom :0 ;  
+  background-color :rgba(0,0,0,.5);
+  
+  width :100% ;
+  color:#ffffff;
+  text-align: center ;
+  padding :5px;
+}
+.pagination{
+    width :100% ;
+    float :left ;
+    padding  :15px ;      /* ??? */
+    text-align : center ;
+    
+}
+.prev , .next
+{
+ color :#000;
+ border :1px solid #000 ;
+ font-size :15px ;
+ padding :8px 15px ;   
+}
+.pagination div{
+    display :inline-block ;
+    margin :0 10px ;
+}
+.page{
+    color :gray ;
+}
+.hide{
+    display:none ;
+    
+    }
+.show{
+display:block
+animation: show .5s ease ;
+}
+
+@keyframes show {
+  0%{
+      opacity :0 ;
+      transform :scale(1) ;
+  }  
+  100% {
+      opacity :1 ;
+      transform :scale(1) ; 
+  }
+}
+.finPage{
+   position: static; 
+   text-align: right;
+   height: 500px;
+  
+}
