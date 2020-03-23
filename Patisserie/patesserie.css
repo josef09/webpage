@@ -1,0 +1,55 @@
+body {
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    color: white;
+}
+
+.bodycontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.2em;
+}
+
+.bodycontaineritem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0.2em;
+    border: 1px solid darkgray;
+    border-radius: 15% 15% 15% 15%;
+    animation-name: anim_image;
+    animation-duration: 2s;
+    transition: all;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.descriptionpreis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0.2em;
+    height: 10rem;
+    width: 10rem;
+    align-content: center;
+}
+
+.bcimage {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 15% 0% 0% 15%;
+    margin: 2px;
+}
+
+.bodycontaineritem:hover {
+    background-color: darkgray;
+    transform: rotateY(360deg) scale(1.1, 1.1) translate(-5px, 5px);
+}
