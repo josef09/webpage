@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="with=device-width initial-scale=1.0"/>
-    <title>  Oli'art  </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="with=device-width initial-scale=1.0" />
+    <title> Oli'art </title>
     <link rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 
 </head>
+
 <body>
-    <!-- Leiste  -->
+    <!--Titre de la page Oli-->
+    <div class="Titre">
+        <h1>Oli'Art</h1>
+    </div>
+
+    <!-- Login optionen  -->
     <div class="nav-container-login">
         <ul class="sign-mode">
-            <li> 
-                <a id="SignUp" onclick="document.getElementById('modal-wrapper-SignUp').style.display='block'"> 
+            <li>
+                <a id="SignUp" onclick="document.getElementById('modal-wrapper-SignUp').style.display='block'">
                     SignUp
-                 </a>
+                </a>
             </li>
             <li>
-                 <a id="SignIn" onclick="document.getElementById('modal-wrapper').style.display='block'">
-                    SignIn 
-                 </a>
-             </li>
+                <a id="SignIn" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                    SignIn
+                </a>
+            </li>
         </ul>
     </div>
-<div class ="Titre" >
-           <h1>Oli'Art</h1>
-    </div>
-<div id ="Rubriken3">
-    <div class ="Rubriken2">
+
+
     <ul class="Rubriken">
-        <li class="afro-class">                  
-            <a  href="../AfrocultureDoc/afro.html">
-                  <img alt="Dame" width="300" height="200" src="woman-Afro.jpg">                  
-                  <p id="afro">   
-                        &hearts;Afrocultur &hearts;
-                  </p>
+        <li class="afro-class">
+            <a href="../AfrocultureDoc/afro.html">
+                <img alt="Dame" width="300" height="200" src="woman-Afro.jpg">
+                <p id="afro">
+                    &hearts;Afrocultur &hearts;
+                </p>
             </a>
         </li>
 
-        <li class="patisserie-class">            
-             <a href=""> 
-                  <img alt="patisserie" width="300" height="200" src="cake-Patisserie.jpg"> 
-                  <p id="patisserie">   
-                        &hearts;Pâtisserie &hearts;
-                  </p>
+        <li class="patisserie-class">
+            <a href="../Patisserie/patesserie.html">
+                <img alt="patisserie" width="300" height="200" src="cake-Patisserie.jpg">
+                <p id="patisserie">
+                    &hearts;Pâtisserie &hearts;
+                </p>
             </a>
         </li>
-      
 
-        <li class="evenementiel-class">            
-              <a href="">  
-                  <img alt="evenementiel" width="300" height="200" src="eat-Organisationel.jpg">                                
-                  <p id="evenementiel"> 
-                      &hearts;Organisationel&hearts;
-                   </p>
+
+        <li class="evenementiel-class">
+            <a href="">
+                <img alt="evenementiel" width="300" height="200" src="eat-Organisationel.jpg">
+                <p id="evenementiel">
+                    &hearts;Organisationel&hearts;
+                </p>
             </a>
         </li>
     </ul>
- </div>
-</div>
+
 
     <!-- Anmeldungsformular -->
     <div id="modal-wrapper" class="modal">
         <form class="modal-content animate" action="">
 
             <div class="imgcontainer">
-                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="close window" >
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="close window">
                     &times;
                 </span>
                 <img src="1test.jpg" alt="avatar" class="avatar">
@@ -87,7 +91,8 @@
         <form class="modal-content animate" action="">
 
             <div class="imgcontainer">
-                <span onclick="document.getElementById('modal-wrapper-SignUp').style.display='none'" class="close" title="close window" >
+                <span onclick="document.getElementById('modal-wrapper-SignUp').style.display='none'" class="close"
+                    title="close window">
                     &times;
                 </span>
                 <img src="1test.jpg" alt="avatar" class="avatar">
@@ -108,18 +113,19 @@
 
     <script>
         var modal = document.getElementById('modal-wrapper');
-        window.onclick = function(event){
-            if(event.target == modal){
+        window.onclick = function (event) {
+            if (event.target == modal) {
                 modal.style.display = 'none';
             }
         }
 
         var modal2 = document.getElementById('modal-wrapper-SignUp');
-        window.onclick = function(event){
-            if(event.target == modal2){
+        window.onclick = function (event) {
+            if (event.target == modal2) {
                 modal2.style.display = 'none';
             }
         }
     </script>
 </body>
+
 </html>

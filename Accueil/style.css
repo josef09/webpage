@@ -1,18 +1,28 @@
 .nav-container-login{
     background-color: #004919;  
-  height: 50px;
-  width: 300px;
+    height: 50px;
+    width: 300px;
   
 }
 
 .sign-mode{
+    list-style-type: none;
     vertical-align: bottom;
     text-align: right;
-    list-style-type: none;
     padding-bottom: 30px;
-    
-    
+    justify-content: right;
+    overflow: hidden;
+}
 
+/*.nav-container-login{
+    justify-content: right;
+}*/
+
+/*Mets les elements de la liste Login sur
+  une ligne horizontale.
+  */
+.sign-mode li{
+    float: right;
 }
 
 li a{     /* faire reference a la partie d enregistrement */
@@ -38,7 +48,7 @@ li a:hover{
     padding-right: 20px;
     text-align: center;
     display: flex;
-  justify-content: center;
+    justify-content: center;
    
     }
 .afro-class {
@@ -66,6 +76,7 @@ input[type=text], input[type=password]{
     box-sizing: border-box;
     font-size: 16px;
 }
+
 
 .nav-container-login a{
     border: none;
@@ -150,6 +161,7 @@ button:hover{
     line-height: 100px;
     text-align: center;
     font-style: italic;
+    margin-top: 40px;
 }
 .Titre{
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
