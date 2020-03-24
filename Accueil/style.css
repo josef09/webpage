@@ -1,28 +1,33 @@
 .nav-container-login{
     background-color: #004919;  
     height: 50px;
-    width: 300px;
-  
+    width:  19%;
+    
 }
 
 .sign-mode{
     list-style-type: none;
     vertical-align: bottom;
     text-align: right;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     justify-content: right;
     overflow: hidden;
 }
 
-/*.nav-container-login{
-    justify-content: right;
-}*/
+.nav-container-login{
+    position: absolute;
+    margin-top: 3px;
+    top: 20%;
+    right: 16px;
+}
+
 
 /*Mets les elements de la liste Login sur
   une ligne horizontale.
   */
 .sign-mode li{
     float: right;
+    margin-right: 7%;
 }
 
 li a{     /* faire reference a la partie d enregistrement */
@@ -155,15 +160,52 @@ button{
 button:hover{
     opacity: 0.8;
 }
+
+/*
+Title  properties
+*/
 .Titre h1 {
 	font-family: 'Lobster', Georgia, Times, serif;
 	font-size: 200px;
     line-height: 100px;
     text-align: center;
     font-style: italic;
-    margin-top: 40px;
+    margin-top: 3%;/*40px;*/
 }
+/*
+Title font and background
+*/
 .Titre{
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
     background-color: goldenrod;
+}
+
+/*
+Searchfield  properties
+*/
+#search{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #FFEF7A;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: -webkit-image-set();
+    background-image: url(../Accueil/searchico.png);
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+Searchfield  properties when pointer clicked it.
+*/
+#search:focus{
+    width: 40%;
 }
