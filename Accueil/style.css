@@ -231,3 +231,22 @@ Searchfield  properties when pointer clicked it.
 #search:focus{
     width: 40%;
 }
+
+.footer {
+    position: absolute;
+ /*   left: 42vh;
+    */
+    margin-top: 50%;
+}
+
+.site-image{
+    position: absolute;
+    left: 19%;
+    background-color: grey;
+    border: 2px solid;
+    padding: 20px; 
+    width: 60%;
+    height: 70%;
+    overflow: auto;
+    
+}
