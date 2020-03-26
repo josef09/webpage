@@ -1,0 +1,13 @@
+.infoContact{
+float: center;
+}
+
+.infoContact h2{
+   text-decoration: underline;
+   
+    color: red;
+}
+.infoContact h2:hover{
+    color: mediumblue;
+    
+ }
