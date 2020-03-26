@@ -21,6 +21,7 @@
     right: 16px;
 }
 
+
 .logo1{
     -ms-transform: rotate(-30deg); 
     transform: rotate(-35deg);   
@@ -188,6 +189,10 @@ Title  properties
     text-align: center;
     font-style: italic;
     margin-top: 3%;/*40px;*/
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 /*
 Title font and background
