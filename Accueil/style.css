@@ -21,6 +21,23 @@
     right: 16px;
 }
 
+.logo1{
+    -ms-transform: rotate(-30deg); 
+    transform: rotate(-35deg);   
+    border-radius: 3px;
+}
+
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 30px;
+}
+
+.logo:hover{
+    opacity: .8;
+}
+
+
 
 /*Mets les elements de la liste Login sur
   une ligne horizontale.
