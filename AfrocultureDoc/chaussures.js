@@ -2,7 +2,7 @@ const galleryElement= document.querySelector(".container").children ;
 const pre = document.querySelector(".prev") ;
 const next = document.querySelector(".next") ;
 const page = document.querySelector(".page") ;
-const maxItem = 8 ;
+const maxItem = 9 ;
 let index = 1;
 const pagination = Math.ceil(galleryElement.length/maxItem);
 console.log(pagination)
