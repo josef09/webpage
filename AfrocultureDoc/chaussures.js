@@ -38,3 +38,117 @@ if(i>= (index* maxItem) - maxItem && i < index*maxItem ){
    
 window.onload=showItems();
 
+/* partie panier */
+
+let carts = document.querySelectorAll('.add-cart');
+
+let products =[
+  {
+    name:"Grey Tshirt" ,
+    tag : "greytshirt" ,
+    price : 40 ,
+    inCart:0 
+
+  },
+  {
+    name:"Black Tshirt",
+    tag : "greytshirt",
+    price : 70 ,
+    inCart:0 
+
+  },
+  {
+    name:"Black Tshirt",
+    tag : "greytshirt",
+    price : 80 ,
+    inCart:0 
+
+  }
+];
+
+for(let i=0 ;i< carts.length ;i++){
+  carts[i].addEventListener('click' , () => {
+    cartNumbers(products[i]) ;
+    totalCost(products[i]) 
+  })
+}
+
+function onloadCartNumbers() {
+  let productNumbers = localStorage.getItem('cartNumbers') ;
+  if(productNumbers ){
+    document.querySelector('.cart span').textContent = productNumbers ;
+  } 
+
+}
+
+function cartNumbers(product)
+{
+  let productNumbers = localStorage.getItem('cartNumbers') ;
+
+  productNumbers=parseInt(productNumbers) ;
+  
+  if(productNumbers ){
+    localStorage.setItem('cartNumbers' , productNumbers + 1 );
+    document.querySelector('.cart span').textContent = productNumbers + 1;
+
+  } else{
+    localStorage.setItem('cartNumbers' , 1);
+    document.querySelector('.cart span').textContent = 1;
+  }
+  setItems(product);
+  
+}
+
+function setItems(product){
+  let cartItems=localStorage.getItem('productsInCart');
+  cartItems = JSON.parse(cartItems);
+
+  if(cartItems != null){
+     if(typeof(cartItems[product.tag]) == undefined) {
+      cartItems={
+        ...cartItems, 
+        [product.tag]:product
+      }
+    }
+    cartItems[product.tag].inCart += 1 ;
+   } else{
+    product.incart= 1 ;
+    cartItems = {
+  [product.tag]:product 
+    }
+  }
+ 
+  localStorage.setItem('productsInCart' , JSON.stringify
+  (cartItems));
+
+}
+function totalCost(product){
+  //console.log("the product price is " , product.price);
+  let cartCost = localStorage.getItem('totalCost') ;
+  
+  console.log("my cartCost is" , cartCost) ;
+  console.log(typeof cartCost) ;
+
+  if(cartCost != null)
+  {
+    cartCost = parseInt(cartCost) ;
+    localStorage.setItem("totalCost" , cartCost + product.price) ;
+
+  } else{
+    localStorage.setItem("totalCost" , product.price) ;
+  }
+}
+function displaycart() {
+  let cartItem = localStorage.getItem("productsInCart")
+  cartItem = JSON.parse(cartItem) ;
+  let productContainer = document.querySelector
+  (".products") ;
+   if(cartItems && productContainer) {
+  console.log("running") ;
+
+   }
+}
+onloadCartNumbers();
+displaycart();
+
+

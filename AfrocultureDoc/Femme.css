@@ -48,11 +48,13 @@
 }
 .entete{
     height: 200px;
+    text-align: center;
     
 }
 .milieu{
-    background: sienna;
-    background-color: goldenrod;
+    display: grid;
+    
+   
 }
 
 .menu{
