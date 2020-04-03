@@ -1,0 +1,236 @@
+
+.sous-titre1
+{
+    background: red;
+}
+header{
+
+    background-image:url('../Fotos_projet/Habillement_Afro💃💃🕺🕺/IMG-20180605-WA0000.jpg');
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    background-position:center ;
+    height:150px;
+    position:relative ;
+
+}
+nav{
+    position:absolute;
+    top:0 ;
+    right:0;
+    left:0;
+    z-index:2;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between ;
+    padding:50px 60px 0 60px ;
+}
+nav li {
+    list-style:none ;
+    display:inline-block ;
+    padding-right:10px;
+    padding-left:10px;
+}
+
+li a {
+    padding:5px ;
+    background-color:red ;
+    text-decoration:none ;
+}
+
+.ensemble
+{
+    box-sizing : border-box ;
+    position: relative;
+    width :255px ;
+    float : left;
+}
+.cart a{
+
+
+cursor :pointer ;
+text-decoration :none ;
+
+}
+
+.fot{
+   
+    height: 100px;
+    width: 100px;
+    position: relative;
+    
+}
+/* il y a une parenthese a list ist ,a remettre*/
+.entete h3{
+    text-align: center;
+    float: center;
+    
+}
+.milieu{
+    background: sienna;
+    background-color: white;
+  width :100%;
+  float :left ;
+  padding :30px  15px;
+    
+}
+
+.menu {
+
+    color:yellow ;
+    height: 100%;
+    float: right ;
+}
+
+.containerGeneral{
+    max-width :1200px;
+    max-height:20%;
+    margin:auto ;
+    
+}
+.container{
+    
+    background-color: tomato;
+}
+
+.container img {
+    transform:scale(1.1) ;
+
+}
+.element11{
+    width: 25%;
+    float: left;
+    position:relative ;  
+      /* avoir un peu d espacement entre les tof */
+    overflow: hidden ;
+    margin-right:20px;
+    margin-left:20px ;
+}
+.element11 img{
+    width :70% ;    /* avoir un peu d espacement entre les tof */
+    display :-webkit-flex ;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+    
+}
+.nomelem{
+  position: absolute ;
+  left :0px;
+  bottom :0 ;  
+  background-color :rgba(0,0,0,.5);
+  
+  width :100% ;
+  color:#ffffff;
+  text-align: center ;
+  padding :5px;
+}
+.pagination{
+    width :100% ;
+    float :left ;
+    padding  :15px ;      /* ??? */
+    text-align : center ;
+    
+}
+.prev , .next
+{
+ color :#000;
+ border :1px solid #000 ;
+ font-size :15px ;
+ padding :8px 15px ;   
+}
+.pagination div{
+    display :inline-block ;
+    margin :0 10px ;
+}
+.page{
+    color :gray ;
+}
+.hide{
+    display:none ;
+    
+    }
+.show{
+display:block
+animation: show .5s ease ;
+}
+
+@keyframes show {
+  0%{
+      opacity :0 ;
+      transform :scale(1) ;
+  }  
+  100% {
+      opacity :1 ;
+      transform :scale(1) ; 
+  }
+}
+.finPage{
+   position: relative; 
+   height: 100px;
+   
+   display: inline;
+   
+}
+.add-cart {
+    position :absolute ;
+    width :10% ;
+    background-color: darkgrey ;
+    transition:all 0.3s ease-in-out ;
+    opacity : 0;
+    cursor:pointer ;
+    text-align:center;
+}
+.element11:hover .cart0{
+    bottom:10px ;
+    opacity:1 ;
+    padding:20px ;
+    text-decoration :none ;
+}
+
+/*--------------panier PAGE------------*/
+
+.products-container{
+    max-width: 650px;
+    justify-content:space-around ;
+    margin:0 auto ;
+    margin-top: 50px;
+}
+.products-container ion-icon {
+    font-size :25px ;
+    color :blue ;
+    margin-left :10px ;
+    margin-right :10px ;
+    cursor : pointer ;
+}
+.product-header{
+    width:100% ;
+    max-width :650px;
+    display:flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin:0 auto ;
+}
+.product-title{
+    width :25% ;
+}
+.price{
+    width:15% ;
+    border-bottom: 4px solid lightgrey ;
+    display:flex ;
+    align-items : center ;
+}
+.quantity{
+    width:30% ;
+    border-bottom :4px solid lightgrey ;
+    display:flex ;
+    align-items:center;
+}
+.total{
+    width:10% ;
+    border-bottom: 4px solid lightgrey ;
+    display:flex ;
+    align-items :center;
+}
+

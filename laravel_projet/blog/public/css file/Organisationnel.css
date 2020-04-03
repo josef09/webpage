@@ -1,0 +1,91 @@
+body{
+    font-family:serif ;
+    background: #f4f4f9 ;
+}
+
+header{
+background-color: rgb(59, 40, 24);
+}
+ul.menuStandard li.a  {
+
+display: inline-block;
+float: right;
+
+}
+ul.menuStandard li.a a {
+
+    list-style-type: none ;
+     padding: 10px ;
+     display: inline-block;
+     text-decoration: none;
+
+
+}
+ul.menuStandard li.a:hover a{
+color: black;
+background-color: red;
+transition: 1s;
+     
+}
+footer {
+text-align: center;
+}
+
+.partie1 p button:hover { /* partie1 entete de la page (bouton)*/
+
+    background-color: goldenrod;   
+}
+.partie1 p {
+    text-align: center;
+    padding: 30px;
+
+}
+.partie1 p button h1 {
+   width: 200px;
+}
+p.intro {
+    color: crimson;
+    text-align: center;
+   
+}
+
+.slider{
+    width:600px ;    /*aggrandir le cadre */
+    overflow:hidden;
+    height: 400px;
+
+    margin:100px auto;
+    background-color: mistyrose ;
+}
+.slides{
+    width: calc(200px * 3);
+    animation: glisse 5s infinite;
+} 
+.slide{
+    float:left;
+    width: 200px ; /*grandeur foto*/
+    height:200px ;
+}
+@keyframes glisse{
+    0%{
+        transform :translateX(0)
+    }
+    10%{
+        transform :translateX(50px)
+    }
+    
+    43%{
+        transform :translateX(-5px)
+    }
+    60%{
+        transform :translateX(-50px)
+    }
+}
+.pagecomplete{
+    background-color:white;
+}
+.menuStandard{
+    color: beige;
+    background-color:white ;
+    
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="with=device-width initial-scale=1.0" />
+    <title> Oli'art </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!--Titre de la page Oli-->
+    <div class="Titre">
+        <h1>Oli'Art</h1>
+    </div>
+    
+    <div class="logo">
+       <a href="../Accueil/accueil.html">
+           <img src="../Accueil/Logo/Webp.net-resizeimage.jpg" class="logo1" alt="Logohaupt" width="150" height="150" >
+        </a>
+    </div>
+    <form>
+         <input type="text" id="search" placeholder="Search..">
+    </form>
+
+    <!-- Login optionen  -->
+    <div class="nav-container-login">
+        <ul class="sign-mode">
+            <li>
+                <a id="SignUp" onclick="document.getElementById('modal-wrapper-SignUp').style.display='block'">
+                    SignUp
+                </a>
+            </li>
+            <li>
+                <a id="SignIn" onclick="document.getElementById('modal-wrapper').style.display='block'">
+                    SignIn
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <ul class="Rubriken">
+        <li class="afro-class">
+            <a href="../AfrocultureDoc/afro.html">
+                <img alt="Dame" width="300" height="200" src="woman-Afro.jpg">
+                <p id="afro">
+                    &hearts;Afrocultur &hearts;
+                </p>
+            </a>
+        </li>
+
+        <li class="patisserie-class">
+            <a href="../Patisserie/patesserie.html">
+                <img alt="patisserie" width="300" height="200" src="cake-Patisserie.jpg">
+                <p id="patisserie">
+                    &hearts;Pâtisserie &hearts;
+                </p>
+            </a>
+        </li>
+
+
+        <li class="evenementiel-class">
+            <a href="../Organisationnel/Organisationnel.html" >
+                <img alt="evenementiel" width="300" height="200" src="eat-Organisationel.jpg">
+                <p id="evenementiel">
+                    &hearts;Organisationnel&hearts;
+                </p>
+            </a>
+        </li>
+    </ul>
+
+
+    <!-- Anmeldungsformular -->
+    <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" action="" method="">
+
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="close window">
+                    &times;
+                </span>
+                <img src="1test.jpg" alt="avatar" class="avatar">
+                <h1 style="text-align: center;">Enregistre toi</h1>
+            </div>
+
+            <div class="container">
+                <input type="text" name="Email" id="" placeholder="Enter your Email"> <br>
+                <input type="password" name="Password" id="" placeholder="Enter your Password"> <br>
+                <button type="submit"> Login</button>
+                <input type="checkbox" style="margin: 26px 30px;">Remember me
+            </div>
+        </form>
+    </div>
+    <!-- Registrierungsformular -->
+    <div id="modal-wrapper-SignUp" class="modal-signup">
+        <form class="modal-content animate" action="http://localhost/New/index.php"  method="post" >
+
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper-SignUp').style.display='none'" class="close"
+                    title="close window">
+                    &times;
+                </span>
+                <img src="1test.jpg" alt="avatar" class="avatar">
+                <h1 style="text-align: center;">Inscris toi!!</h1>
+            </div>
+
+            <div class="container">
+                <input type="text" name="Prenom" id="" placeholder="Enter your first Name">
+                <input type="text" name="Nom" id="" placeholder="Enter your last Name"> <br>
+                <input type="text" name="Email" id="" placeholder="Enter your Email">
+                <input type="password" name="Password" id="" placeholder="Enter your Password"> <br>
+                <input type="password" name="Password" id="" placeholder="Enter your Password again"> <br>
+                <button type="submit">Inscription</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="site-image" >
+
+        
+        
+    </div>
+
+
+    <footer>
+
+        <div class="footer">
+            Copyright 2012-2016 - All Right reserved
+        </div>
+    </footer>
+
+
+    <script>
+        var modal2 = document.getElementById('modal-wrapper-SignUp');
+        var modal = document.getElementById('modal-wrapper');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+            if (event.target == modal2) {
+                modal2.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

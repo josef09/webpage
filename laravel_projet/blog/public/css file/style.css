@@ -1,0 +1,252 @@
+.nav-container-login{
+    background-color: #004919;  
+    height: 50px;
+    width:  19%;
+    
+}
+
+.sign-mode{
+    list-style-type: none;
+    vertical-align: bottom;
+    text-align: right;
+    /*padding-bottom: 30px;*/
+    justify-content: right;
+    overflow: hidden;
+}
+
+.nav-container-login{
+    position: absolute;
+    margin-top: 3px;
+    top: 20%;
+    right: 16px;
+}
+
+
+.logo1{
+    -ms-transform: rotate(-30deg); 
+    transform: rotate(-35deg);   
+    border-radius: 3px;
+}
+
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 30px;
+}
+
+.logo:hover{
+    opacity: .8;
+}
+
+
+
+/*Mets les elements de la liste Login sur
+  une ligne horizontale.
+  */
+.sign-mode li{
+    float: right;
+    margin-right: 7%;
+}
+
+li a{     /* faire reference a la partie d enregistrement */
+    display: block;
+    color: rgb(127, 187, 255);
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+li a:hover{
+    background-color: black ;
+    
+}
+.Rubriken li{
+    display: inline; 
+   
+}
+
+.Rubriken{
+    align-content: space-between;
+    list-style-type: none ;
+    padding-right: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+    }
+.afro-class {
+    
+   
+}
+
+.patisserie-class #patisserie{
+   
+    
+}
+
+.evenementiel-class #evenementiel{
+    
+}
+/**{margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif;}
+
+*/
+input[type=text], input[type=password]{
+    width: 90% ;
+    padding: 12px 26px;
+    margin: 8px;
+    display: inline;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+.nav-container-login a{
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+
+.nav-container-login a:hover{
+    opacity: 0.8;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.modal, .modal-signup{
+    display: none;
+    position: fixed;
+    /**/z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4)
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.close{
+    position: absolute;
+    right: 25%;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: red;
+    cursor: pointer;
+}
+
+.animate{
+    animation: zoom 0.6s
+}
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+button{
+    background-color: #4cAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 7px 20px;
+    border: none;
+    cursor: pointer;
+    width: 85%;
+    font-size: 20px;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+/*
+Title  properties
+*/
+.Titre h1 {
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 200px;
+    line-height: 100px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 3%;/*40px;*/
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*
+Title font and background
+*/
+.Titre{
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    background-color: goldenrod;
+}
+
+/*
+Searchfield  properties
+*/
+#search{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #FFEF7A;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: -webkit-image-set();
+    background-image: url(../Accueil/searchico.png);
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+Searchfield  properties when pointer clicked it.
+*/
+#search:focus{
+    width: 40%;
+}
+
+.footer {
+    position: absolute;
+ /*   left: 42vh;
+    */
+    margin-top: 50%;
+}
+
+.site-image{
+    position: absolute;
+    left: 19%;
+    background-color: grey;
+    border: 2px solid;
+    padding: 20px; 
+    width: 60%;
+    height: 70%;
+    overflow: auto;
+    
+}

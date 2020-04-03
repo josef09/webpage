@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title> Femme </title>
+    <link rel="stylesheet" type="text/css" href = "Femme.css">
+    
+</head>
+<body>
+      <header class ="menu">
+        <ul id = "menu1">
+            <li class = "a">
+               <a href = "../Accueil/accueil.html">
+                   Accueil
+               </a>
+            </li>
+            <li class ="b">
+                <a href = "contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>  
+      </header>    
+      <section class = "ensemble">
+          <header class = " menu-titre">
+              <h3 ID = "grandTitre">Categories
+              </h3>
+              
+          </header>
+          <div class = "sous-titre">
+              <ul id ="sous-titre1">
+                  <li class ="titre">
+                <a class  ="change" href = "H_accessoirs.html">Accessoirs</a>
+                  </li>
+                <li class  = "titre">
+                    <a href = "H_chaussures.html">chaussures</a>
+                </li>
+                <li class = "titre">
+                    <a href = "H_habits.html">
+                        habits
+                    </a>
+                </li>
+              </ul>
+          </div>
+        
+       </section>
+      <section class = "milieu">
+          <header class ="entete" >
+        <h3>Galery</h3>
+          </header>
+          <ul class  = "list">
+              <li class = "element1">
+                  <div class = "element11">
+                      <img alt src = "ImageAfro/foto4.jpg" alt ="dix terre" class ="fot">
+                  </div>
+                  <div class= "nomelem">foto1</div>
+              </li>
+              <li class = "element1">
+                <div class = "element11">
+                    <img alt src = "ImageAfro/foto2.jpg"  class ="fot" >
+                </div>
+                <div class= "nomelem">foto2</div>
+            </li>
+            <li class = "element1">
+                <div class = "element11">
+                    <img alt src = "ImageAfro/foto5.jpg"  class ="fot" >
+                </div>
+                <div class= "nomelem">foto2</div>
+            </li>
+            <li class = "element1">
+                <div class = "element11">
+                    <img alt src = "ImageAfro/foto1.jpg"  class ="fot" >
+                </div>
+                <div class= "nomelem">foto2</div>
+            </li>
+            <li class = "element1">
+                <div class = "element11">
+                    <img alt src = "ImageAfro/foto3.jpg"  class ="fot" >
+                </div>
+                <div class= "nomelem">foto2</div>
+            </li>
+            <li class = "element1">
+                <div class = "element11">
+                    <img alt src = "ImageAfro/foto6.jpg"  class ="fot" >
+                </div>
+                <div class= "nomelem">foto2</div>
+            </li>
+          </ul>
+
+
+      </section>
+      <nav >
+          
+      </nav>
+
+      <footer>
+          <p>
+              Copyright 2012-2016 - All Right reserved
+          </p>
+      </footer>
+
+</body>
+
+</html>
